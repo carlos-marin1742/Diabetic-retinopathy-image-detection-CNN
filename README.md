@@ -19,7 +19,7 @@ Found in 4.1 million people
 
  - Roughly 1/29 diabetics
    
- -1/3 are African-American and Mexican-American
+ - 1/3 are African-American and Mexican-American
 
 
 
