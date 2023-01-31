@@ -5,21 +5,21 @@
 
 Diabetic Retinopathy is disease of the eyes 
 
-  -caused by high blood sugar
+ - caused by high blood sugar
     
-  - Affects blood vessels
+ - Affects blood vessels
     
-  - Causes Loss of Vision
+ - Causes Loss of Vision
    
-   - Measured by Disease Proliferation
+ - Measured by Disease Proliferation
 
 Affects individuals with diabetes
 
 Found in 4.1 million people
 
-   -Roughly 1/29 diabetics
+ - Roughly 1/29 diabetics
    
-   -1/3 are African-American and Mexican-American
+ -1/3 are African-American and Mexican-American
 
 
 
@@ -27,17 +27,30 @@ Found in 4.1 million people
 
 We are building a deep learning model to detect the various levels of diabetic retinopathy
 
+Applications of CNN include
+
+ - Image Detection
+ 
+ - Image Analysis
+ 
+ - Object Detection 
+
   Why?
   
 Medical misdiagnosis caused by varying legels of knowledge and experience
 
 Ensuring proper diagnosis for medical professional
 
+For Who: You our Investor!
+
 ## Data
 
 Data is created by TensorFlow
 
 Contains images of 35,000+ images of different levels of Diabetic Retinopathy
+
+![](images/sample_images.png)
+
 
 ## Methods
 
@@ -47,7 +60,7 @@ Baseline model created for comparison
 
 Model evalution
 
-Using Tranfer Learning, instantiating pre-trained model as base
+Using Tranfer Learning, instantiating pre-trained model as base. Transfer Learning is using pre-trained model. 
 
 Adding the base model to final model
 
@@ -64,6 +77,14 @@ Data Visualization for initial model loss
 
 ![](images/main_loss.png)
 
+
+- Overtime we see overfitting occurring at epoch 6-7. Over fitting is simply, overreliance on training data
+    
+- Validation loss/accuracy stable. 
+
+- Training Accuracy & Loss improves over time
+
+
 Data Visualization of model with transfer learning performance accuracy
 
 ![](images/tl_accuracy.png)
@@ -71,6 +92,25 @@ Data Visualization of model with transfer learning performance accuracy
 Data Visualization of model with transfer learning performance loss
 
 ![](images/tl_loss.png)
+
+
+- Overtime we see overfitting occurring at epoch 6-7. 
+
+- Validation loss/accuracy stable. 
+
+- Training Accuracy & Loss improves over time
+
+
+Confusion Matrix of Main Model
+
+![](images/cm_main.png)
+
+Confusion Matrix of Transfer Learning Model
+
+![](images/cm_tl.png)
+
+Unfortunately, the models can not distinguish between the different classes. Even after applying transfer learning. Additional images and feature engineering are  needed.
+
 
 
 
@@ -81,6 +121,12 @@ The model evaluation shows 68% Accuracy
 Overfitting occus in both models
 
 Transfer learning greatly improves model performance
+
+Unfortunately, requires the data requires additional images (such as from different angles, clear images, etc.),
+
+Results limited to computational resources available
+
+Model could not distinguish between different classes.
 
 
 ## Next Steps...
